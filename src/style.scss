@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300&display=swap');
+
+
+.header {
+     display: flex;
+     position: fixed;
+     height: 80px;
+     width: 100%;
+     top: 0;
+     left: 0;
+     color: black;
+
+     align-items: center;
+
+     .logo {
+          margin-left: 20px;
+          font-family: 'Bellota Text', cursive;
+     }
+
+}
+
+section {
+     text-align: center;
+}
+
+
+.block-left { 
+     width: 50%;
+     animation: backInLeft;
+     animation-duration: .5s;
+     .image {
+          padding: 50px;
+          margin: 200px auto;
+          h1 {
+               font-weight: bold;
+               font-family: 'Bellota Text', cursive;
+               padding-top: 20px;
+               opacity: 0;   
+               transition: 1s; 
+          }
+
+          &:hover{
+               h1{
+                    transition: 1s;
+                    opacity: 1;
+               }
+          }
+
+          img {
+               width: 100%;
+               height: auto;
+          }
+     }
+}
+
+.block-right {
+     width: 50%;
+     animation: backInRight;
+     animation-duration: 1s;
+     .image {
+          padding: 65px;
+          margin: 200px auto;
+          h1 {
+               font-weight: bold;
+               font-family: 'Bellota Text', cursive;
+               padding-top: 20px;
+               opacity: 0;   
+               transition: 1s; 
+          }
+
+          &:hover{
+               h1{
+                    transition: 1s;
+                    opacity: 1;
+               }
+          }
+
+          img {
+               width: 100%;
+               height: auto;
+          }
+     }
+}
+
+footer {
+     text-align: center;
+     background-color: black;
+     color: white;
+     font-size: 20px;
+     padding: 50px 0px;
+
+     p {
+          margin: 0;
+          padding: 0;
+     }
+}
+
+
+@media(max-width:1200px) {
+     section {
+          display: flex;
+          flex-direction: column;
+
+          .block-left {
+               width: 100%;
+               .image{
+                    padding: 0;
+               }
+          }
+
+          .block-right {
+               width: 100%;
+               .image{
+                    padding: 0;
+               }
+          }
+     }
+}
